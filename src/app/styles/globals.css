@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f3f4f6;
+  color: #1e3a8a;
+}
+
+.content {
+  padding-top: 70px; /* Adjust for fixed header */
+  min-height: 80vh; /* Push footer to bottom */
+}
