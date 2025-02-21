@@ -6,6 +6,6 @@ body {
 }
 
 .content {
-  padding-top: 70px; /* Adjust for fixed header */
-  min-height: 80vh; /* Push footer to bottom */
+  padding-top: 70px;
+  min-height: 80vh;
 }
