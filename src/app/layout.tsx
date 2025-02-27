@@ -24,6 +24,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  if (process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true") {
+    return (
+      <html lang="en">
+        <body>
+          <div className="flex items-center justify-center h-screen bg-gray-100">
+            <h1 className="text-2xl font-bold text-red-600">🚧 Site is in Maintenance Mode 🚧</h1>
+          </div>
+        </body>
+      </html>
+    );
+  }
   return (
     <html lang="en">
       <body>
